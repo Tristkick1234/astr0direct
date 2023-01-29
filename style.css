@@ -1,0 +1,88 @@
+/*import the headers and fonts from google*/
+
+@import url("header.css");
+
+/*every element must have the font, color white, no margins*/ 
+
+/*body will take up all space, really not needed but nice to specify*/
+body{
+    background-color: black;
+    width: 100%;
+}
+
+/*myVideo acts as the container for the video element, nothing more.*/
+#myVideo{
+    width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: -1;
+
+}
+video{
+    width: 100%;
+    height:inherit;
+}
+
+@media screen and (max-width: 480px) {
+    /*solved a big problem, resizing the background image but keeping it fullscreen*/
+    video{
+        height: 100%;
+         width: 177.77777778vh; /* 100 * 16 / 9 */
+         min-width: 100%;
+         min-height: 56.25vw; /* 100 * 9 / 16 */
+     }
+    
+  }
+
+
+/*Standard for all slides styling*/
+.container{
+    height: 20vh;
+    padding: 4rem;
+    background-color: black;
+}
+
+
+/*Specific slide styling in chronological order*/
+
+/*first slide styling*/
+#firstslide{
+   height: 100vh;
+
+   display:flex;
+   flex-direction: column;
+   
+   /*added a little tint to make the background look darker- changes the perspective a bit*/
+   background-color: rgba(0, 0, 0, 0.5);
+   background-size:cover ;
+   background-repeat: no-repeat;
+   justify-content: center;
+}
+#lock_img{
+    width:10rem;
+    padding:3rem;
+}
+/*all text within containers will be centered*/
+#firstslide>*,#secondslide>*{
+    text-align: center;
+}
+
+/*second slide styling*/
+#secondslide{
+    height: 50vh;
+
+}
+
+#secondslide>h4:last-of-type{
+    background-color:green;
+    border-radius: 5px;
+    width:10rem;
+    padding:2rem;
+}
+
+
+
+#fourthslide>img{
+    width:50%;
+    text-align: center;
+}

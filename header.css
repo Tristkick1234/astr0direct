@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    /*The padding and border are included in container sizes*/
+    box-sizing: border-box;
+    color: white;
+    margin: 0 auto;
+    padding:0;
+}
+
+
+
+
+html {
+    scroll-behavior:smooth;
+  }
+
+/*box holding top section*/
+header{
+    width:100%;
+    position: fixed;
+    
+}
+
+
+/*box holding nav*/
+nav{
+    
+    width:100%;
+    padding:.5rem;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.6);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+/*unordered list holding links*/
+ul{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    
+
+    
+   
+}
+ul>img{
+    aspect-ratio:2/1;
+    width:100px;
+    height:inherit;
+  }
+li{
+    font-size: 1.2rem;
+    list-style-type: none;
+    padding:1rem;
+    border-bottom: 2px solid transparent;
+    opacity: 1;
+}
+
+/*anchor tags*/
+a{
+    text-decoration: none;  
+    list-style-type: none;
+    color:white;
+    border-bottom: 2px solid transparent;
+}
+
+.hamburger{
+   
+        visibility:hidden;
+        
+      
+}
+
+.line{
+    width: 35px;
+    height: 2px;
+    background-color: #d1d1d1;
+    margin: 6px 0;
+    border-radius:3px;
+
+}
+
+/* if the screen size is smaller than (insert size) */
+
+@media screen and (max-device-width:720px){
+    /*makes hamburger on top of ul*/
+    .nav{
+        display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+    
+      }
+      
+      .hamburger{
+      
+       visibility: visible;
+        cursor:pointer;
+        display:block;
+        
+      }
+      ul{
+        display:none;
+        z-index: 100;
+        background-image: inherit;
+        
+      }
+      li{
+          padding:20px 60px;
+          border-bottom:2px solid transparent ;
+      }
+
+      /* some animations for the navigation and nice looks*/
+
+      @keyframes transition {
+        from {transform: translate(0px,-500px);}
+        to {transform: translate(0px,0px);}
+      }
+      
+      /*when the hamburger lines are clicked, align all links into a column*/
+      ul.active{
+        display:flex;
+        flex-direction:column;
+        align-content:center;
+        
+
+        animation-name: transition;
+        animation-duration:1s;
+        animation-timing-function: cubic-bezier(0, 0.9, 0.53, 1.12);
+        
+      }
+
+      /* Small line animations on click check javascript*/
+      
+      .hamburger.active>#line1{
+        translate: 0 .5rem;
+        transform: rotateZ(45deg);
+        transition-duration: 2s;
+       
+      }
+      
+      .hamburger.active>#line2{
+    
+
+        translate: 0 -3rem;
+        transition-duration: 3s;
+        visibility: hidden;
+
+      
+       
+      }
+      .hamburger.active>#line3{
+        translate:0 -.5rem;
+        transform: rotateZ(-45deg);
+        transition-duration: 2s;
+      
+      }
+
+      .hamburger.inactive>*{
+        transition-duration:3s;
+      }
+}
+

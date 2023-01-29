@@ -1,0 +1,26 @@
+11/25/22
+read the theme and started looking for space themed fonts
+created a prototype that had a fullscreen background hd
+
+1/10/23
+created the home page with the audio and video design
+drew inspiration from jasper ai
+
+created many things 1/25/23
+
+finished beginning all pages
+added hamburger nav menu for mobile folks
+added some plans for the about, priicng, launch, home pages
+
+its really just a matter of finishing atp
+
+questions?
+how could I make this hamburger menu?
+how in the world do I make this background video fit and stay in place?
+How can I start the audio and video automatically?
+
+
+double check responsiveness
+how do you want it to feel?
+is it accesessible for people with disabilities?
+
