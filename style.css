@@ -40,6 +40,7 @@ video{
     height: 20vh;
     padding: 4rem;
     background-color: black;
+    text-align: center;
 }
 
 
@@ -63,26 +64,75 @@ video{
     padding:3rem;
 }
 /*all text within containers will be centered*/
-#firstslide>*,#secondslide>*{
-    text-align: center;
-}
 
-/*second slide styling*/
+
 #secondslide{
-    height: 50vh;
+    height:50vh;
+    height: fit-content;
+    
+}
+#secondslide>h3{
+    padding: 1rem;
+    text-align: left;
+    font-weight: 200;
 
 }
 
-#secondslide>h4:last-of-type{
-    background-color:green;
-    border-radius: 5px;
-    width:10rem;
+
+#thirdslide{
+    background: rgba(0, 0, 0, 0.596);
     padding:2rem;
+    height: fit-content;
+   
 }
 
+#thirdslide>ul{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    
 
+}
+@media screen and (max-device-width:720px){
+
+    #thirdslide{
+        background: rgba(0, 0, 0, 0.596);
+    padding:2rem;
+    height: fit-content;
+   
+    
+       
+    }
+    
+    #thirdslide>ul{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: left;
+    
+    }
+    #thirdslide>li{
+        width:100%;
+    }
+}
 
 #fourthslide>img{
     width:50%;
     text-align: center;
 }
+
+
+/*second slide styling*/
+#fifthslide{
+    height: 50vh;
+
+}
+
+#fifthslide>h4:last-of-type{
+    background-color:rgb(88, 141, 159);
+    border-radius: 50px;
+    width:10rem;
+    padding:2rem;
+}
+
+

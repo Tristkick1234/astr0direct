@@ -2,6 +2,8 @@
 :root{
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    --blue: #588D9F;
+    --lime:#e3e7d3;
 }
 
 *{
