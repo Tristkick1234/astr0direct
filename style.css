@@ -10,6 +10,9 @@ body{
     width: 100%;
 }
 
+body>*{
+ border: 1px solid var(--blue);
+}
 /*myVideo acts as the container for the video element, nothing more.*/
 #myVideo{
     width: 100%;
@@ -33,6 +36,7 @@ video{
      }
     
   }
+
 
 
 /*Standard for all slides styling*/
@@ -67,9 +71,11 @@ video{
 
 
 #secondslide{
-    height:50vh;
-    height: fit-content;
-    
+    height:100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+   
 }
 #secondslide>h3{
     padding: 1rem;
@@ -93,7 +99,7 @@ video{
     
 
 }
-@media screen and (max-device-width:720px){
+@media screen and (max-device-width:840px){
 
     #thirdslide{
         background: rgba(0, 0, 0, 0.596);
@@ -115,16 +121,49 @@ video{
         width:100%;
     }
 }
-
+#fourthslide{
+   
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
 #fourthslide>img{
-    width:50%;
-    text-align: center;
+    
+    width: 100%;
 }
 
+
+#testimonials{
+    height: fit-content;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.767);
+  
+  
+}
+
+.users{
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 1rem;
+    padding:1rem;
+    text-align: left;
+   
+ 
+}
+.users>h3{
+    text-align: left;
+    font-size: small;
+    padding:2rem;
+}
 
 /*second slide styling*/
 #fifthslide{
     height: 50vh;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -135,4 +174,9 @@ video{
     padding:2rem;
 }
 
-
+footer{
+    flex-direction: center;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}

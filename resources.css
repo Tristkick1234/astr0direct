@@ -17,7 +17,7 @@ h2{
     
 }
 
-.photo_grid,.inspiration_grid,.video_grid,.font_grid{
+.photo_grid,.inspiration_grid,.video_grid,.font_grid,.web_ref_grid{
     width:100%;
     display: grid;
     background-color: white;
@@ -25,25 +25,26 @@ h2{
     column-gap: 1vw;
     text-align: center;
     padding:2rem;
-}
 
-.photo_grid{
     background-image: url("/photos/spaceimg.jpg");
    
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.photo_grid{
+   
+}
+
 
 
 .video_link>*, .fonts>*{
     justify-content: center;
-    color:black;
 
 }
 
 
-.photo_item,.inspiration_item{
+.photo_item,.inspiration_item,.web_item,.fonts,.video_link{
     background-color: rgba(0, 0, 0, 0.71);
     padding:1rem;
     height:10vh;

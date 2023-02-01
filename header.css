@@ -17,11 +17,6 @@
 
 
 
-
-html {
-    scroll-behavior:smooth;
-  }
-
 /*box holding top section*/
 header{
     width:100%;
@@ -94,7 +89,7 @@ a{
 
 /* if the screen size is smaller than (insert size) */
 
-@media screen and (max-device-width:720px){
+@media screen and (max-device-width:840px){
     /*makes hamburger on top of ul*/
     .nav{
         display: flex;
@@ -171,5 +166,15 @@ a{
       .hamburger.inactive>*{
         transition-duration:3s;
       }
+}
+
+body::-webkit-scrollbar{
+  width: .5rem;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: var(--blue);
+}
+body::-webkit-scrollbar-track {
+  background-color:var(--lime);
 }
 
