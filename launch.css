@@ -1,3 +1,4 @@
+
 .container{
     background-image: url("/photos/spacex.jpg");
     height:100vh;
@@ -12,4 +13,89 @@
 #main_h1{
     align-content: center;
     justify-content: center;
+}
+
+#spacecraft_header{
+    text-align: center;
+    padding:4rem;
+    background-color: black;
+
+}
+.space-craft{
+    display: flex;
+    padding:1rem;
+    justify-content: center;
+    
+    flex-direction: column;
+    background-image: url("/photos/cashor.jpg");
+    background-size: cover;
+    
+}
+
+
+.space-craft-item{
+    align-self: center;
+    padding:3rem;
+    background-color: rgba(0, 0, 0, 0.495);
+    border-radius: 50px;
+    width:30rem;
+    margin: 2rem;
+
+
+}
+
+.space-craft-item>h2{
+    text-align: center;
+}
+.space-craft-item>img{
+    width:100%;
+    border-radius: 25px;
+}
+
+#level{
+    display: inline-block;
+    width:50%;
+    background-color: green;
+    border-radius: 25px;
+    height: .45rem;
+}
+
+.blurb{
+    padding:1rem;
+    
+}
+
+.training{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+@media screen and (max-width: 860px){
+    .training{
+        flex-direction: column;
+        
+    }
+    .training-item{
+        width:20rem;
+        align-self: center;
+    }
+    .space-craft-item{
+        width:100%;
+    }
+}
+
+.training-item{
+    background-color: white;
+    border-radius: 25px;
+    padding:1rem;
+    margin: 1rem;
+    
+ 
+}
+
+.training-item>*{
+    color: black;
+    padding:1rem;
 }

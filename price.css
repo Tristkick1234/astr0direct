@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+}
+
+.intro{
+    border: 1px solid white;
+    padding:4rem;
+    height:80vh;
+
+    background-image: url("/photos/aldebaran.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro>h2{
+  
+    box-shadow: 10px 0px 10px var(--blue);
+}
+.plan{
+    height:100vh;
+}
