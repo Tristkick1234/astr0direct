@@ -1,4 +1,8 @@
+@import url("header.css");
 
+body{
+    background-color: black;
+}
 .container{
     background-image: url("/photos/spacex.jpg");
     height:100vh;
@@ -14,6 +18,157 @@
     align-content: center;
     justify-content: center;
 }
+
+.voyage-info>h2{
+    text-align: center;
+    padding:1rem;
+}
+
+.planets{
+  
+   padding:4rem;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    height: 50vh;
+
+   
+}
+
+
+
+.planets>*{
+    position: relative;
+    animation: planet-float 5s infinite;
+
+  
+}
+
+.planets>*>*{
+    position: relative;
+    top:5rem;
+  
+}
+
+@media screen and (max-device-width:840px){
+    .planets{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: fit-content;
+
+        
+
+     
+        
+    }
+   
+    .planets>*{
+        padding:1rem;
+        margin: 1rem;
+        align-self: center;
+        animation-play-state: paused;
+        z-index:-1;
+    }
+    .planets>*>*{
+        position: relative;
+        left:5rem;
+        top:0rem;
+    }
+   
+    
+}
+@keyframes planet-float {
+    0%{top:0rem;}
+    25%{top:1rem;}
+    50%{top:0rem;}
+    75%{top:-1rem;}
+    100%{top:0rem;}
+    
+  }
+
+#sun{
+    width: 50px;
+    height:50px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: none;
+   
+
+}
+
+#mercury{
+    width: 1rem;
+    height:1rem;
+    background-color: gray;
+    border-radius: 50%;
+    animation-delay: 3s;
+
+}
+#venus{
+    width: 1.75rem;
+    height:1.75rem;
+    background-color: rgb(103, 52, 52);
+    border-radius: 50%;
+    animation-delay: 2s;
+
+}
+#moon{
+    width: 1rem;
+    height:1rem;
+    background-color: gray;
+    border-radius: 50%;
+    animation-delay: 1s;
+
+}
+#earth{
+    width: 1.75rem;
+    height:1.75rem;
+    background-color: rgb(65, 65, 188);
+    border-radius: 50%;
+    animation-delay: 5s;
+}
+#mars{
+    width: 1.5rem;
+    height:1.5rem;
+    background-color: red;
+    border-radius: 50%;
+    animation-delay: 4s;
+
+}
+#jupiter{
+    width: 2.5rem;
+    height:2.5rem;
+    background-color: rgb(135, 86, 86);
+    border-radius: 50%;
+    animation-delay: 6s;
+}
+#saturn{
+    width: 2.5rem;
+    height:2.5rem;
+    background-color: rgb(140, 93, 93);
+    border-radius: 50%;
+    animation-delay: 4s;
+}
+
+#uranus{
+    width: 2.2rem;
+    height:2.2rem;
+    background-color: rgb(37, 44, 108);
+    border-radius: 50%;
+    animation-delay: 2s;
+}
+
+#neptune{
+    width: 2.3rem;
+    height:2.3rem;
+    background-color: rgb(135, 86, 86);
+    border-radius: 50%;
+    animation-delay: 3s;
+}
+
+
 
 #spacecraft_header{
     text-align: center;
@@ -35,11 +190,11 @@
 
 .space-craft-item{
     align-self: center;
-    padding:3rem;
+    padding:1rem;
     background-color: rgba(0, 0, 0, 0.495);
     border-radius: 50px;
     width:30rem;
-    margin: 2rem;
+    margin: 1rem;
 
 
 }

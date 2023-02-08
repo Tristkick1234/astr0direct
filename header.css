@@ -168,6 +168,15 @@ a{
       }
 }
 
+
+footer{
+  flex-direction: center;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding:2rem;
+}
+
 body::-webkit-scrollbar{
   width: .5rem;
 }

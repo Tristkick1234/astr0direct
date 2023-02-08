@@ -35,6 +35,7 @@ https://fonts.google.com/specimen/Space+Grotesk
 Inspiration
 https://www.jasper.ai/art
 https://hubblesite.org/
+https://cove.co/
 
 
 Help

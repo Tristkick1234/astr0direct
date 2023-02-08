@@ -1,11 +1,14 @@
+@import url("header.css");
 body{
     background-color: black;
+
 }
 
+
 .intro{
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     padding:4rem;
-    height:80vh;
+    height:90vh;
 
     background-image: url("/photos/aldebaran.jpg");
     background-size: cover;
@@ -19,6 +22,91 @@ body{
   
     box-shadow: 10px 0px 10px var(--blue);
 }
+.plan-grid{
+    padding:1rem;
+    display: flex;
+
+
+   background-color: black;
+   
+
+}
 .plan{
-    height:100vh;
+    height:50vh;
+    width: 30rem;
+    align-self: center;    
+    border-radius: 25px;
+    padding:4rem;
+    height: fit-content;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan {
+    background: linear-gradient(-45deg, var(--lime), #74efff, var(--blue));
+    
+    animation: gradient-bg 5s ease infinite;
+    background-size:400% 400%;
+}
+
+@keyframes gradient-bg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.plan>h2{
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+#auPrice,#gasPrice{
+    text-align: center;
+    font-size:3rem;
+}
+
+.plan>h3{
+    text-align: center;
+    
+}
+
+.h5{
+    font-weight:normal;
+}
+
+.paynow{
+    background-color:rgb(39, 57, 51);
+    
+    text-align:center;
+    align-self: center;
+
+    padding:1rem;
+    margin:1rem;
+    border-radius: 25px;
+    font-size: large;
+    width:10rem;
+
+    
+}
+
+
+@media screen and (max-device-width:840px){
+    .plan-grid{
+        display: flex;
+       
+        flex-direction: column;
+
+    }
+    .plan{
+        width:100%;
+        margin:1rem;
+    }
 }
