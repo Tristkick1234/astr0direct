@@ -19,6 +19,11 @@ body{
     justify-content: center;
 }
 
+.voyage-info{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
 .voyage-info>h2{
     text-align: center;
     padding:1rem;
@@ -32,6 +37,7 @@ body{
     align-content: center;
     justify-content: center;
     height: 50vh;
+    width:100%;
 
    
 }
@@ -48,7 +54,14 @@ body{
 .planets>*>*{
     position: relative;
     top:5rem;
+    visibility: hidden;
   
+}
+#planet-paragraph{
+    padding:1rem;
+    text-align: center;
+    width: 100%;
+    
 }
 
 @media screen and (max-device-width:840px){
@@ -75,6 +88,8 @@ body{
         position: relative;
         left:5rem;
         top:0rem;
+     
+
     }
    
     
@@ -150,6 +165,7 @@ body{
     background-color: rgb(140, 93, 93);
     border-radius: 50%;
     animation-delay: 4s;
+    
 }
 
 #uranus{
@@ -176,12 +192,28 @@ body{
     background-color: black;
 
 }
+
+.bounding-box{
+    width:70%;
+    height: fit-content;
+
+    display: flex;
+    
+    flex-direction:  row;
+    justify-content: center;
+    align-items:center;
+}
+
 .space-craft{
     display: flex;
     padding:1rem;
+ 
+    align-items:baseline;
+    justify-content: center;
+    flex-direction:  row;
     justify-content: center;
     
-    flex-direction: column;
+
     background-image: url("/photos/cashor.jpg");
     background-size: cover;
     
@@ -194,7 +226,7 @@ body{
     background-color: rgba(0, 0, 0, 0.495);
     border-radius: 50px;
     width:30rem;
-    margin: 1rem;
+  
 
 
 }
@@ -203,7 +235,9 @@ body{
     text-align: center;
 }
 .space-craft-item>img{
-    width:100%;
+    height:20rem;
+    width: 100%;
+   
     border-radius: 25px;
 }
 
@@ -227,7 +261,7 @@ body{
     
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 840px){
     .training{
         flex-direction: column;
         
@@ -236,9 +270,31 @@ body{
         width:20rem;
         align-self: center;
     }
+
+  
+
     .space-craft-item{
         width:100%;
     }
+
+    .bounding-box{
+        width:100%;
+    }
+    .button{
+        position:relative;
+    }
+}
+
+
+.button{
+    height: 80px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.224);
+    padding:1rem;
+    border-radius: 25px;
+    
+    cursor:pointer;
+    
 }
 
 .training-item{
@@ -254,3 +310,10 @@ body{
     color: black;
     padding:1rem;
 }
+
+/*For the slide mobile media query
+
+When on phone:
+Push buttons into the container
+
+make the container cover the width of the screen

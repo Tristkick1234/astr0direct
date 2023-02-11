@@ -2,3 +2,101 @@
 body{
     background-color: black;
 }
+
+body>h2{
+    padding:4rem;
+}
+
+.statement{
+    padding:4rem;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url("/photos/adkryp.jpg");
+    background-size:100% 100% ;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.statement>h1{
+    background-color:rgba(0, 0, 0, 0.541);
+    border-radius: 10px;
+    padding:1rem;
+}
+
+.our-story,.our-mission,.charity{
+    padding:4rem;
+    max-height:fit-content;
+}
+
+.our-story>p{
+    padding:1rem;
+   
+}
+
+.founders{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width:100%;
+    
+    
+}
+
+.content-divide{
+    background-color: white;
+    border-radius: 25px;
+    padding:4rem;
+    width:100%;
+    margin:1rem;
+    color:black;
+
+    display: flex;
+    align-content: baseline;
+    justify-content: center;
+}
+
+.vert-line{
+    background-color: black;
+    height:100%;
+    width:.5rem;
+    border-radius: 25px;
+}
+
+@media screen and (max-device-width:840px){
+    .content-divide{
+        background-color: white;
+        border-radius: 25px;
+        padding:4rem;
+        width:100%;
+        margin:1rem;
+        color:black;
+    
+        display: flex;
+        flex-direction: column;
+        align-content: baseline;
+        justify-content: center;
+    }
+
+    .vert-line{
+        background-color: black;
+        height:.5rem;
+        width:100%;
+        border-radius: 25px;
+    }
+
+}
+
+#group-photo{
+    height:10rem;
+    
+}
+.our-mission{
+
+}
+
+.charity{
+
+}

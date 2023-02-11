@@ -37,6 +37,9 @@ https://www.jasper.ai/art
 https://hubblesite.org/
 https://cove.co/
 
+LOGO
+https://1000logos.net/
+All company logos by 1000logos.net
 
 Help
 w3schools.com

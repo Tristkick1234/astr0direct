@@ -4,13 +4,14 @@
     font-family: 'Open Sans', sans-serif;
     --blue: #588D9F;
     --lime:#e3e7d3;
+    color: white;
 }
 
 *{
     font-family: 'Space Grotesk', sans-serif;
     /*The padding and border are included in container sizes*/
     box-sizing: border-box;
-    color: white;
+   
     margin: 0 auto;
     padding:0;
 }
