@@ -5,6 +5,7 @@ body{
 
 body>h2{
     padding:4rem;
+    text-align: center;
 }
 
 .statement{
@@ -29,11 +30,20 @@ body>h2{
 .our-story,.our-mission,.charity{
     padding:4rem;
     max-height:fit-content;
+    
+}
+.our-story{
+    border-bottom:1px solid var(--blue);;
 }
 
 .our-story>p{
     padding:1rem;
+    width: 70%;
    
+}
+
+.our-mission{
+    width:70%;
 }
 
 .founders{
@@ -44,6 +54,90 @@ body>h2{
     
     
 }
+
+
+@keyframes gradient-bg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@media screen and(max-device-width:840px){
+
+    .timeline{
+        width:100%;
+        margin:0 auto;
+    }
+    .timeline-item-left,.timeline-item-right{
+        position:static;
+    }
+
+}
+
+
+
+
+
+.timeline{
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align:center;
+    height: fit-content;
+    width:100%;
+    margin: 0 auto;   
+}
+
+.timeline-bar{
+    height:100%;
+    width:1rem;
+    border-radius: 25px;
+    background-color: var(--blue);
+    position: absolute;
+    left:50%
+   
+
+}
+
+.timeline-item-left,.timeline-item-right{
+
+    padding:2rem;
+    height:fit-content;
+    width:50%;
+    text-align: left;
+
+    background: linear-gradient(-45deg, var(--lime), #4f8289, var(--blue));
+    
+    animation: gradient-bg 5s ease infinite;
+    background-size:400% 400%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.timeline-item-left{
+    
+    position:relative;
+    right:5rem;
+  
+}
+
+.timeline-item-right{
+    
+    position:relative;
+    left:5rem;
+   
+
+
+}
+
 
 .content-divide{
     background-color: white;
@@ -92,11 +186,4 @@ body>h2{
 #group-photo{
     height:10rem;
     
-}
-.our-mission{
-
-}
-
-.charity{
-
 }

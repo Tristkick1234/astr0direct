@@ -121,17 +121,25 @@ video{
         width:100%;
     }
 }
+
+#fourth-heading{
+    text-align: center;
+    background-color: aliceblue;
+    padding:1rem;
+    color: black;
+    font-size: 2rem;
+}
 #fourthslide{
-   
     height: fit-content;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  
     justify-content: center;
-   
+    width:100%;
+    background-color: aliceblue;
 }
 #fourthslide>img{
-    
-    width: 100%;
+    width: 60%;
 }
 
 

@@ -23,10 +23,16 @@ body{
     display: flex;
     width: 100%;
     flex-direction: column;
+    border-bottom: 1px solid var(--blue);
+    padding:2rem;
 }
 .voyage-info>h2{
     text-align: center;
     padding:1rem;
+}
+.voyage-info>p{
+    width:50%;
+    text-align: center;
 }
 
 .planets{
