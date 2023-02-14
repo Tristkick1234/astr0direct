@@ -95,6 +95,7 @@ body>h2{
     height: fit-content;
     width:100%;
     margin: 0 auto;   
+  
 }
 
 .timeline-bar{
@@ -109,7 +110,7 @@ body>h2{
 }
 
 .timeline-item-left,.timeline-item-right{
-
+    z-index: -1;
     padding:2rem;
     height:fit-content;
     width:50%;
