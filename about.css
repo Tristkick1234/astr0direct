@@ -51,7 +51,7 @@ body>h2{
     flex-direction: row;
     justify-content: center;
     width:100%;
-    
+   
     
 }
 
@@ -186,5 +186,12 @@ body>h2{
 
 #group-photo{
     height:10rem;
+    padding:1rem;
+    
+    
+}
+
+.leaders{
+    padding:1rem;
     
 }
