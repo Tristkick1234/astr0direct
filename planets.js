@@ -4,40 +4,25 @@ let planetPara = document.querySelector("#planet-paragraph");
 
 
 
+
 for (x of planetsChildren) {
-    (function(x) {
-      x.addEventListener('mouseover', function() {
+  (function (x) {
+    x.addEventListener('click', function() {
 
-         
-        planetPara.innerHTML= x.innerHTML;
+     
        
-         
+      planetPara.innerHTML= x.innerHTML;
+     
+       
 
-      });
+    });
 
-    })(x);
-  }
+  })(x);
+}
 
-  var x = window.matchMedia("(max-width: 700px)")
 
-  function mobilePlanets(){
-    for (x of planetsChildren) {
-      (function(x) {
-        x.addEventListener('click', function() {
-  
-           
-          planetPara.innerHTML= x.innerHTML;
-         
-           
-  
-        });
-  
-      })(x);
-    }
-    
-  }
 
-  mobilePlanets(x)
+
 
  
 
