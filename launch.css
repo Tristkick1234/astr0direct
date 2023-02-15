@@ -57,6 +57,8 @@ body{
   
 }
 
+
+
 .planets>*>*{
     position: relative;
     top:5rem;
@@ -189,6 +191,13 @@ body{
     border-radius: 50%;
     animation-delay: 3s;
 }
+
+.planets>*:hover{
+    
+    border:2px solid var(--blue)!important;
+}
+
+
 
 
 

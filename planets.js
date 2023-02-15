@@ -3,28 +3,18 @@ let planetsChildren = planets.children;
 let planetPara = document.querySelector("#planet-paragraph");
 
 
+let myMediaQuery = window.matchMedia('(max-width: 840px)');
+
 
 
 for (x of planetsChildren) {
   (function (x) {
-    x.addEventListener('click', function() {
-
-     
-       
+    x.addEventListener('mouseover', function() {
       planetPara.innerHTML= x.innerHTML;
-     
-       
-
     });
-
   })(x);
 }
 
-
-
-
-
- 
 
 //when a mouse is hovered display the stuff
 //loop through all children
