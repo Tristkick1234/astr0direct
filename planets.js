@@ -3,17 +3,34 @@ let planetsChildren = planets.children;
 let planetPara = document.querySelector("#planet-paragraph");
 
 
-let myMediaQuery = window.matchMedia('(max-width: 840px)');
+let myMediaQuery = window.matchMedia('(max-device-width: 840px)');
 
 
 
-for (x of planetsChildren) {
+/*for (x of planetsChildren) {
   (function (x) {
     x.addEventListener('mouseover', function() {
       planetPara.innerHTML= x.innerHTML;
     });
   })(x);
-}
+}*/
+
+let planetChild = planets.childNodes;
+
+planetChild.forEach(
+  function(x){
+    x.addEventListener('mouseover',function(){
+      planetPara.innerHTML = x.innerHTML;
+    })
+
+    x.addEventListener('touchstart',function(){
+      planetPara.innerHTML = x.innerHTML;
+    })
+
+
+  
+  }
+);
 
 
 //when a mouse is hovered display the stuff
