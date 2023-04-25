@@ -34,23 +34,27 @@ nav{
     color:white;
     background-color: rgba(0, 0, 0, 0.6);
     display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     
 }
 
 /*unordered list holding links*/
 ul{
+
     display: flex;
     flex-direction:row;
     align-items: center;
-    justify-content: center;
-    
-
-    
    
 }
+
+.forms{
+  border: 2px solid #588D9F;
+  border-radius: 5px;
+  padding:.25rem;
+  margin:.5rem;
+}
+
 ul>img{
     aspect-ratio:2/1;
     width:100px;
@@ -75,6 +79,7 @@ a{
 .hamburger{
    
         visibility:hidden;
+        position:absolute;
         
       
 }
@@ -92,11 +97,14 @@ a{
 
 @media screen and (max-device-width:840px){
     /*makes hamburger on top of ul*/
-    .nav{
+    nav{
         display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
     
       }
       
@@ -105,12 +113,15 @@ a{
        visibility: visible;
         cursor:pointer;
         display:block;
+        position:static;
+        align-self: center;
         
       }
       ul{
         display:none;
         z-index: 100;
         background-image: inherit;
+        
         
       }
       li{
@@ -137,6 +148,8 @@ a{
         animation-timing-function: cubic-bezier(0, 0.9, 0.53, 1.12);
         
       }
+
+     
 
       /* Small line animations on click check javascript*/
       

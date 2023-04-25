@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    margin:0 auto;
+   
+
+    background-image: url("/photos/pexels-rakicevic-nenad-1274260.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+    background-color: rgb(224, 237, 237);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+h1{
+    align-self: center;
+}
+form{
+    margin:1rem;
+   
+    align-self: center;
+  
+
+}
+.personal{
+    width: 100%;
+    border: 2px solid rgb(190, 187, 187);
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    
+}
+
+.submit{
+
+    padding:1rem;
+}
+
+span{
+    font-size: 1.25rem;
+    padding:.25rem;
+}
+
+input{
+    border: 2px solid rgb(190, 187, 187);
+
+}
+
+
