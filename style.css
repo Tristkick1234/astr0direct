@@ -10,9 +10,9 @@ body{
     width: 100%;
 }
 
-body>*{
+/*body>*{
  border: 1px solid var(--blue);
-}
+}*/
 /*myVideo acts as the container for the video element, nothing more.*/
 #myVideo{
     width: 100%;

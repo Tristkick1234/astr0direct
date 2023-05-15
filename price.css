@@ -6,11 +6,11 @@ body{
 
 
 .intro{
-    border: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
     padding:4rem;
     height:90vh;
 
-    background-image: url("/photos/aldebaran.jpg");
+    background-image: url("/photos/pexels-philippe-donn-1169754.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -18,9 +18,12 @@ body{
     justify-content: center;
 }
 
-.intro>h2{
+.intro>*{
   
-    box-shadow: 10px 0px 10px var(--blue);
+    box-shadow: 2px 0px 2px var(--blue);
+    background-color:#1b577ac9 ;
+    border-radius: 5px;
+    padding:.25rem;
 }
 .plan-grid{
     padding:1rem;
@@ -95,6 +98,10 @@ body{
     width:10rem;
 
     
+}
+
+.paynow:hover{
+    background-color: rgba(51, 72, 65, 0.616);
 }
 
 

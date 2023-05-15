@@ -1,31 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+*{
+    box-sizing: border-box;
+}
 body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    
     width: 100%;
     margin:0 auto;
    
 
     background-image: url("/photos/pexels-rakicevic-nenad-1274260.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
-    
-    
-    background-color: rgb(224, 237, 237);
+    background-size: cover;
+    background-position-x: 50%;
+    color: white;
+    background-color: black;
+
     font-family: 'Space Grotesk', sans-serif;
 }
 
 h1{
     align-self: center;
+    display: block;
 }
 form{
     margin:1rem;
-   
+    width:40%;
     align-self: center;
+
+    
+    background-image: url("/photos/pexels-rakicevic-nenad-1274260.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x:center;
+ 
+   
+    border: 2px solid rgb(190, 187, 187);
   
 
+}
+input{
+    color:black;
 }
 .personal{
     width: 100%;
@@ -37,10 +55,55 @@ form{
    
     
 }
+.notvisible{
+    padding: 2rem;
+   
+    bottom:25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
 
-.submit{
 
-    padding:1rem;
+@media screen and (max-width: 840px){
+    form{
+        margin: 0 auto;
+        width:85%;
+    }
+   
+}
+
+.submit,#previous,#next{
+
+    padding:.5rem;
+    width: 5rem;
+    border-radius: 5px;
+}
+#next{
+    margin-left: 2rem;
+}
+#bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: antiquewhite;
+   
+    
+}
+#travelbuttons{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    width:80%;
+    margin-right: 50%;
+    
+}
+
+
+
+#bottom>*{
+    width:10%;
 }
 
 span{
@@ -48,9 +111,59 @@ span{
     padding:.25rem;
 }
 
+
 input{
     border: 2px solid rgb(190, 187, 187);
 
 }
 
+#check_background{
 
+   
+    padding:0;
+    margin:0 auto;
+    width:100%;
+    height:100vh;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(43, 40, 40, 0.308);
+    z-index:2;
+    pointer-events:none;
+    opacity:0;
+   
+}
+
+#check{
+  
+    width: 12rem;
+    height:12rem;
+   
+   
+
+   
+}
+
+#xbutton{
+    position: absolute;
+    right:15%;
+    top: 10%;
+    padding:.5rem
+}
+#line1, #line2{
+    height: .2rem;
+    width:1.5rem;
+    border-radius: 25px;
+    background-color: rgb(15, 24, 37);
+}
+
+#line1{
+    transform: rotate(45deg);
+}
+#line2{
+    transform: rotate(-45deg);
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,77 @@
     <title>Ticket Submission | Astro Retreat</title>
     <link rel="stylesheet" href="forms.css">
 </head>
+
 <body>
+
+    <div id="check_background">
+
+        <div id="xbutton">
+            <div id="line1"></div>
+            <div id="line2"></div>
+        </div>
+        <h1>Ticket Submitted!</h1>
+        <img id="check" src="photos/complete_circle.png" alt="Circle">
+    </div>
 
     <h1>Astro-Retreat Login</h1>
 
-    <form action="" method="GET" enctype="text/plain">
+    <form method="post" enctype="text/plain">
         <div class="personal">
-        <span>Name</span>
-        <input type="text" name="sname">
+            <span>Full Name</span>
+            <input class="inputs" type="text" name="name" placeholder="Last, First">
         </div>
 
         <div class="personal">
             <span>Email</span>
-            <input type="text" name="sname">
-            </div>
+            <input class="inputs" type="text" name="email" placeholder="blank@organization.com">
+        </div>
+
+        <div class="personal">
+            <span>Phone Number</span>
+            <input class="inputs" type="text" name="email" placeholder="(123)-456-789">
+        </div>
 
         <div class="personal">
             <span>Address</span>
-            <input type="text" name="sname">
-            </div>
-
-        <div class="geo">
+            <input class="inputs" type="text" name="Enter Address" placeholder="Address,City,State">
+        </div>
+        <div class="notvisible">
+            <span>Credit Card</span>
+            <input class="inputs" type="text" name="Credit Card">
 
         </div>
-        <input class="submit" type="submit" value="Send">
-        
-     </form>
 
-      <!--
+        <div class="notvisible">
+            <span>CVV</span>
+            <input class="inputs" type="text" name="CVV" placeholder="123">
+        </div>
+        <!--make it multi-paged-->
+        <div class="notvisible">
+            <span>Expiration date</span>
+            <input class="inputs" type="text" name="Expiration" placeholder="01/02">
+
+        </div>
+
+        <div class="notvisible">
+            <!--Check this-->
+
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1P22d_5iZD_GzGe8Qg5Pz898bmBYB3-M&ehbc=2E312F"
+                width="640" height="240"></iframe>
+
+        </div>
+        <div id="bottom">
+            <input id="submit" type="button" value="Send">
+            <div id="travelbuttons">
+                <input id="previous" type="button" value="prev">
+                <input id="next" type="button" value="next">
+            </div>
+
+        </div>
+        <script src="forms.js"></script>
+    </form>
+
+    <!--
         <form name="myForm" action="" method="GET">
   Enter something in the box: <br>
   <input type="text" name="inputbox" value="">
@@ -47,6 +91,7 @@ function testResults (form) {
     (form completed)
 }
       -->
-    
+
 </body>
+
 </html>
