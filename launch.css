@@ -332,6 +332,9 @@ body{
     .button{
         position:relative;
     }
+    #location>iframe{
+        width:85%;
+    }
 }
 
 
