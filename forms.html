@@ -23,49 +23,54 @@
 
     <h1>Astro-Retreat Login</h1>
 
-    <form method="post" enctype="text/plain">
-        <div class="personal">
-            <span>Full Name</span>
-            <input class="inputs" type="text" name="name" placeholder="Last, First">
+    <form id="myform" method="post" enctype="text/plain">
+        <div id="container_one">
+            <div class="personal">
+                <span>Full Name</span>
+                <input class="inputs" type="text" name="name" placeholder="Last, First" required>
+            </div>
+
+            <div class="personal">
+                <span>Email</span>
+                <input class="inputs" type="text" name="email" placeholder="blank@organization.com" required>
+            </div>
+
+            <div class="personal">
+                <span>Phone Number</span>
+                <input class="inputs" type="text" name="email" placeholder="(123)-456-789" required>
+            </div>
+
+            <div class="personal">
+                <span>Address</span>
+                <input class="inputs" type="text" name="Enter Address" placeholder="Address,City,State" required>
+            </div>
         </div>
 
-        <div class="personal">
-            <span>Email</span>
-            <input class="inputs" type="text" name="email" placeholder="blank@organization.com">
-        </div>
+        <div id="container_two">
+            <div class="notvisible">
+                <span>Credit Card</span>
+                <input class="inputs" type="text" name="Credit Card" required>
 
-        <div class="personal">
-            <span>Phone Number</span>
-            <input class="inputs" type="text" name="email" placeholder="(123)-456-789">
-        </div>
+            </div>
 
-        <div class="personal">
-            <span>Address</span>
-            <input class="inputs" type="text" name="Enter Address" placeholder="Address,City,State">
-        </div>
-        <div class="notvisible">
-            <span>Credit Card</span>
-            <input class="inputs" type="text" name="Credit Card">
 
-        </div>
 
-        <div class="notvisible">
-            <span>CVV</span>
-            <input class="inputs" type="text" name="CVV" placeholder="123">
-        </div>
-        <!--make it multi-paged-->
-        <div class="notvisible">
-            <span>Expiration date</span>
-            <input class="inputs" type="text" name="Expiration" placeholder="01/02">
+            <div class="notvisible">
+                <span>CVV</span>
+                <input class="inputs" type="text" name="CVV" placeholder="123"required>
+            </div>
+            <!--make it multi-paged-->
+            <div class="notvisible">
+                <span>Expiration date</span>
+                <input class="inputs" type="text" name="Expiration" placeholder="01/02" required>
 
-        </div>
+            </div>
 
-        <div class="notvisible">
-            <!--Check this-->
+            <div class="notvisible">
+                <!--Check this-->
 
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1P22d_5iZD_GzGe8Qg5Pz898bmBYB3-M&ehbc=2E312F"
-                width="640" height="240"></iframe>
-
+                
+            </div>
         </div>
         <div id="bottom">
             <input id="submit" type="button" value="Send">
@@ -75,6 +80,7 @@
             </div>
 
         </div>
+        
         <script src="forms.js"></script>
     </form>
 

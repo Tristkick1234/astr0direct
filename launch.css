@@ -275,7 +275,41 @@ body{
     flex-direction: row;
     
 }
+#location_header{
+    border-top: 1px solid var(--blue);
+    text-align: center;
+    padding:4rem;
+}
+#location{
+    display: flex;
+    justify-content: center;
+    padding:1rem;
+    
+    
+    background: linear-gradient(-45deg, #013026,
+    #014760,
+    #107e57,
+    #81a730);
+    
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
 
+@keyframes gradient{
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#location>iframe{
+    width:50%;
+    border-radius: 5px;
+}
 @media screen and (max-width: 840px){
     .training{
         flex-direction: column;

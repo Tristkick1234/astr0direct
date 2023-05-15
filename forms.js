@@ -1,8 +1,10 @@
-let inputs = document.querySelectorAll("inputs");
+let inputs = document.querySelectorAll(".inputs");
 let checked = document.getElementById("check_background");
 var body = document.body
 
 let xbutton =  document.getElementById('xbutton');
+
+let form = document.getElementById('myform');
 
 
 
@@ -12,8 +14,9 @@ window.onload = function(){
     document.getElementById('submit').onclick = function(){
         
         xbutton.style.pointerEvents = "all";
-        
+      
         checked.style.opacity = i;
+       
         i++;
 
         if(i==2){
@@ -26,7 +29,7 @@ window.onload = function(){
     document.getElementById('xbutton').onclick = function(){
        
         checked.style.opacity = i;
-
+      
         i++;
         if(i==2){
             i=0;
@@ -67,8 +70,7 @@ document.getElementById("previous").onclick = function(){
    
     for(let i=0; i<notvisible.length; i++){
         notvisible[i].style.visibility = "hidden";
-       
-        notvisible[i].remove();
+   
     }
 
     
