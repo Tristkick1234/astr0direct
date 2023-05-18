@@ -10,17 +10,17 @@ let form = document.getElementById('myform');
 
 window.onload = function(){
     
-    let i = 0;
+    let y = 0;
     document.getElementById('submit').onclick = function(){
         
         xbutton.style.pointerEvents = "all";
       
-        checked.style.opacity = i;
+        checked.style.opacity = y;
        
-        i++;
+        y++;
 
-        if(i==2){
-            i=0;
+        if(y==2){
+            y=0;
         }
 
         //fade into a check screen
@@ -28,11 +28,11 @@ window.onload = function(){
     
     document.getElementById('xbutton').onclick = function(){
        
-        checked.style.opacity = i;
+        checked.style.opacity = y;
       
-        i++;
-        if(i==2){
-            i=0;
+        y++;
+        if(y==2){
+            y=0;
         }
 
     }
