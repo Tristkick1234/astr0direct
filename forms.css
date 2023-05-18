@@ -144,7 +144,7 @@ input{
     justify-content: space-between;
     background-color: rgb(190, 187, 187);
    
-    z-index: 3;
+    
 }
 #travelbuttons{
     display:flex;
