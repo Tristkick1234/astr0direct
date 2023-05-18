@@ -2,45 +2,47 @@
 
 @import url("header.css");
 
-/*every element must have the font, color white, no margins*/ 
+/*every element must have the font, color white, no margins*/
 
 /*body will take up all space, really not needed but nice to specify*/
-body{
+body {
     background-color: black;
     width: 100%;
 }
 
-/*body>*{
- border: 1px solid var(--blue);
-}*/
+
 /*myVideo acts as the container for the video element, nothing more.*/
-#myVideo{
+#myVideo {
     width: 100%;
-  height: auto;
-  position: fixed;
-  z-index: -1;
+    height: auto;
+    position: fixed;
+    z-index: -1;
 
 }
-video{
+
+video {
     width: 100%;
-    height:inherit;
+    height: inherit;
 }
 
 @media screen and (max-width: 840px) {
+
     /*solved a big problem, resizing the background image but keeping it fullscreen*/
-    video{
+    video {
         height: 100%;
-         width: 177.77777778vh; /* 100 * 16 / 9 */
-         min-width: 100%;
-         min-height: 56.25vw; /* 100 * 9 / 16 */
-     }
-    
-  }
+        width: 177.77777778vh;
+        /* 100 * 16 / 9 */
+        min-width: 100%;
+        min-height: 56.25vw;
+        /* 100 * 9 / 16 */
+    }
+
+}
 
 
 
 /*Standard for all slides styling*/
-.container{
+.container {
     height: 20vh;
     padding: 4rem;
     background-color: black;
@@ -51,33 +53,36 @@ video{
 /*Specific slide styling in chronological order*/
 
 /*first slide styling*/
-#firstslide{
-   height: 100vh;
+#firstslide {
+    height: 100vh;
 
-   display:flex;
-   flex-direction: column;
-   
-   /*added a little tint to make the background look darker- changes the perspective a bit*/
-   background-color: rgba(0, 0, 0, 0.5);
-   background-size:cover ;
-   background-repeat: no-repeat;
-   justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    /*added a little tint to make the background look darker- changes the perspective a bit*/
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
 }
-#lock_img{
-    width:10rem;
-    padding:3rem;
+
+#lock_img {
+    width: 10rem;
+    padding: 3rem;
 }
+
 /*all text within containers will be centered*/
 
 
-#secondslide{
-    height:100vh;
+#secondslide {
+    height: 100vh;
     flex-direction: column;
     display: flex;
     justify-content: center;
-   
+
 }
-#secondslide>h3{
+
+#secondslide>h3 {
     padding: 1rem;
     text-align: left;
     font-weight: 200;
@@ -85,100 +90,104 @@ video{
 }
 
 
-#thirdslide{
+#thirdslide {
     background: rgba(0, 0, 0, 0.596);
-    padding:2rem;
+    padding: 2rem;
     height: fit-content;
-   
+
 }
 
-#thirdslide>ul{
-    display:flex;
+#thirdslide>ul {
+    display: flex;
     flex-direction: row;
     width: 100%;
-    
+
 
 }
-@media screen and (max-device-width:840px){
 
-    #thirdslide{
+@media screen and (max-device-width:840px) {
+
+    #thirdslide {
         background: rgba(0, 0, 0, 0.596);
-    padding:2rem;
-    height: fit-content;
-   
-    
-       
+        padding: 2rem;
+        height: fit-content;
+
+
+
     }
-    
-    #thirdslide>ul{
-        display:flex;
+
+    #thirdslide>ul {
+        display: flex;
         flex-direction: column;
         width: 100%;
         justify-content: left;
-    
+
     }
-    #thirdslide>li{
-        width:100%;
+
+    #thirdslide>li {
+        width: 100%;
     }
 }
 
-#fourth-heading{
+#fourth-heading {
     text-align: center;
     background-color: aliceblue;
-    padding:1rem;
+    padding: 1rem;
     color: black;
     font-size: 2rem;
 }
-#fourthslide{
+
+#fourthslide {
     height: fit-content;
     display: grid;
     grid-template-columns: auto auto auto;
-  
+
     justify-content: center;
-    width:100%;
+    width: 100%;
     background-color: aliceblue;
 }
-#fourthslide>img{
+
+#fourthslide>img {
     width: 60%;
 }
 
 
-#testimonials{
+#testimonials {
     height: fit-content;
     justify-content: center;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.767);
-  
-  
+
+
 }
 
-.users{
-    width:100%;
+.users {
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     margin: 1rem;
-    padding:1rem;
+    padding: 1rem;
     text-align: left;
-   
- 
+
+
 }
-.users>h3{
+
+.users>h3 {
     text-align: left;
     font-size: small;
-    padding:2rem;
+    padding: 2rem;
 }
 
 /*second slide styling*/
-#fifthslide{
+#fifthslide {
     height: 50vh;
     flex-direction: column;
     justify-content: center;
 
 }
 
-#fifthslide>h4:last-of-type{
-    background-color:rgb(88, 141, 159);
+#fifthslide>h4:last-of-type {
+    background-color: rgb(88, 141, 159);
     border-radius: 50px;
-    width:10rem;
-    padding:2rem;
+    width: 10rem;
+    padding: 2rem;
 }
-
