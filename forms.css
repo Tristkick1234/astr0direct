@@ -39,7 +39,7 @@ form{
     margin:1rem;
     
     height:fit-content;
-    align-self: center;
+align-self: center;
     width:40%;
     
     background-image: url("/photos/pexels-rakicevic-nenad-1274260.jpg");
@@ -57,20 +57,23 @@ form{
 #container_two{
     
     /*top:5.1rem;*/
-    top:13rem;
-    width:40%;
-
-    
     position:absolute;
+    align-self: center;
+    
+    
+    margin: 0 auto;
+    
+   
  
     visibility: hidden;
+   width:40%;
 
+}
+
+.notvisible>*{
     display: flex;
-    flex-direction: column;
-
-  
-   
-
+    flex-direction: row;
+    justify-content:space-between;
 }
 .personal,.notvisible{
     
@@ -105,13 +108,16 @@ input{
     #container_two{
     
         /*top:5.1rem;*/
-        top:17rem;
-        width:40%;
-    
-        
         position:absolute;
-     
-        visibility: hidden;
+    align-self: center;
+    
+    
+    margin: 0 auto;
+    width: auto;
+   
+ 
+    visibility: hidden;
+       
       
        
     
